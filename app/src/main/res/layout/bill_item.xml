@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/qa_green" />
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支出："
+                    android:textColor="#e51c23"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/output"
+                    android:text="0"
+                    android:textColor="#e51c23"/>
+            </LinearLayout>
+
+            <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+                  <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="收入："
+                  android:textColor="#259b24"/>
+                  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input"
+                    android:text="0"
+                    android:textColor="#259b24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+           android:layout_width="130dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/content"
+           android:text="内容"
+           android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/time"
+            android:text="日期"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
