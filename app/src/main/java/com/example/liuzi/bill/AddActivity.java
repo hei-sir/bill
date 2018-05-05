@@ -1,5 +1,6 @@
 package com.example.liuzi.bill;
 
+import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -145,10 +146,9 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
     }
 
     private void back(){
-        Intent intent = new Intent(this,MainActivity.class);
-        startActivity(intent);
-        finish();
+        AddActivity.this.finish();;
     }
+
 
     private void sureadd(){
         int s=put.getSelectedItemPosition();
