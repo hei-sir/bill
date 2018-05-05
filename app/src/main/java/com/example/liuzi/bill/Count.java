@@ -9,8 +9,17 @@ public class Count extends DataSupport {
     private int id;
     private String time;
     private String content;
-    private int input;
-    private int output;
+    private Double input;
+    private Double output;
+    private int orders;
+
+    public int getOrders() {
+        return orders;
+    }
+
+    public void setOrders(int orders) {
+        this.orders = orders;
+    }
 
     public int getId() {
         return id;
@@ -36,26 +45,27 @@ public class Count extends DataSupport {
         this.content = content;
     }
 
-    public int getInput() {
+    public Double getInput() {
         return input;
     }
 
-    public void setInput(int input) {
+    public void setInput(Double input) {
         this.input = input;
     }
 
-    public int getOutput() {
+    public Double getOutput() {
         return output;
     }
 
-    public void setOutput(int output) {
+    public void setOutput(Double output) {
         this.output = output;
     }
-    public Count(int id,int input,int output,String content,String time){
+    public Count(int id,Double input,Double output,String content,String time,int orders){
         this.id=id;
         this.input=input;
         this.output=output;
         this.content=content;
         this.time=time;
+        this.orders=orders;
     }
 }

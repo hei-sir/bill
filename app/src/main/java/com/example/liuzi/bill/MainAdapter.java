@@ -17,7 +17,7 @@ public abstract class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewH
 
     static class ViewHolder extends RecyclerView.ViewHolder{
         CardView cardView;
-        TextView input,output,content,time,id;
+        TextView input,output,content,time;
 
         public ViewHolder(View view){
             super(view);
@@ -26,7 +26,6 @@ public abstract class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewH
             output=(TextView) itemView.findViewById(R.id.output);
             content=(TextView)itemView.findViewById(R.id.content);
             time=(TextView)itemView.findViewById(R.id.time);
-            id=(TextView)itemView.findViewById(R.id.id);
         }
     }
 
@@ -63,8 +62,6 @@ public abstract class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewH
         holder.output.setText(String.valueOf(count.getOutput()));
         holder.input.setText(String.valueOf(count.getInput()));
         holder.time.setText(count.getTime());
-        holder.id.setText(String.valueOf(count.getId()));
-
     }
 
 

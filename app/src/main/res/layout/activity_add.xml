@@ -114,9 +114,9 @@
                 android:background="@null"
                 android:gravity="center_vertical"
                 android:layout_marginLeft="60dp"
-                android:hint="支出为负数，收入为正数"
+                android:hint="输入金额数"
                 android:singleLine="true"
-                android:inputType="number"
+                android:inputType="number|numberDecimal"
                 android:textColor="@android:color/darker_gray"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="14sp" />
